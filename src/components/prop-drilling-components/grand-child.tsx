@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../../context/UserContext";
 
-const GrandChild = ({ user }: { user: string }) => {
+const GrandChild = () => {
+  const user = useContext(UserContext);
   return (
     <div>
       Welcome <h1>{user}</h1>

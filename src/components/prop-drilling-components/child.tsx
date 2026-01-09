@@ -1,7 +1,8 @@
 import React from "react";
+import GrandChild from "./grand-child";
 
-const Child = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+const Child = () => {
+  return <GrandChild />;
 };
 
 export default Child;
