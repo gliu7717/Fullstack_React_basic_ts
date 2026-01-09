@@ -1,5 +1,6 @@
 import "./App.css";
 import Greetings from "./components/Greetings";
+import GrandChild from "./components/prop-drilling-components/grand-child";
 import Parent from "./components/prop-drilling-components/parent";
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
     <>
       <>
         <Greetings name='Peter' age={20} />
-        <Parent user={userName} />
+        <Parent>
+          <GrandChild user={userName} />
+        </Parent>
       </>
     </>
   );

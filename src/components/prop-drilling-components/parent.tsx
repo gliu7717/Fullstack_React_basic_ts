@@ -1,8 +1,8 @@
 import React from "react";
 import Child from "./child";
 
-const Parent = ({ user }: { user: string }) => {
-  return <Child user={user} />;
+const Parent = ({ children }: { children: React.ReactNode }) => {
+  return <Child>{children}</Child>;
 };
 
 export default Parent;
